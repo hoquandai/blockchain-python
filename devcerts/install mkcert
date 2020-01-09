@@ -1,0 +1,6 @@
+install mkcert
+
+1. sudo apt install libnss3-tools
+2. git clone https://github.com/FiloSottile/mkcert && cd mkcert
+3. go build -ldflags "-X main.Version=$(git describe --tags)"
+4. ./mkcert -install
